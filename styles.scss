@@ -55,6 +55,10 @@ body {
     margin: 0.4rem 0 1rem;
   }
 
+  &__pic {
+    width: 100%;
+  }
+
   &__subtitle {
     margin: 2rem 0;
   }
@@ -71,7 +75,7 @@ body {
 
 @mixin card-color($color) {
   border-color: $color;
-  box-shadow: inset 5px 5px $color, inset -5px -5px $color;
+  box-shadow: inset 3px 3px $color, inset -3px -3px $color;
 }
 
 .card-orange {
@@ -82,11 +86,14 @@ body {
   @include card-color(#ffda33);
 }
 
-// .folder {
-//   left: 0;
-//   position: fixed;
-//   top: 0;
-//
-//   opacity: 0.5;
-//   width: 100%;
-// }
+.card-blue {
+  @include card-color($blue);
+}
+
+.card-grey {
+  @include card-color($grey);
+}
+
+.card-green {
+  @include card-color(#03ad4d);
+}
